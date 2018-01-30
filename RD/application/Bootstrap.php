@@ -20,6 +20,7 @@ class Bootstrap extends Yaf\Bootstrap_Abstract {
 
 	//单据头跨域设置
 	public function _initHeader(Yaf\Dispatcher $dispatcher){
+		ob_clean();
 		header("Access-Control-Allow-Origin: *");
 	}
 
